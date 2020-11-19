@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1 style="margin-left: 20%">FLAPPY DRAGON!</h1>
+    <canvas id="canvas" width="640" height="480" style="margin-left: 20%"></canvas>
+    <script src="./flappy.js"></script>
+    <script>
+      window.addEventListener("load", async () => {
+        await wasm_bindgen("./flappy_bg.wasm");
+      });
+    </script>
+  </body>
+</html>
